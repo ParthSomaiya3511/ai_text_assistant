@@ -1,0 +1,226 @@
+/* =====================================================
+GLOBAL
+===================================================== */
+
+.stApp{
+    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hide Streamlit Default */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+/* =====================================================
+TITLE
+===================================================== */
+
+.main-title{
+    font-size:55px;
+    font-weight:800;
+    text-align:center;
+    color:#60a5fa;
+    margin-top:10px;
+}
+
+.sub-title{
+    text-align:center;
+    color:#cbd5e1;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+/* =====================================================
+TEXTAREA
+===================================================== */
+
+.stTextArea textarea{
+    background:#1e293b !important;
+    color:white !important;
+    border-radius:18px !important;
+    border:1px solid #334155 !important;
+    padding:15px !important;
+    font-size:16px !important;
+}
+
+/* =====================================================
+SELECTBOX
+===================================================== */
+
+.stSelectbox div[data-baseweb="select"]{
+    background:#1e293b !important;
+    border-radius:12px !important;
+    color:white !important;
+}
+
+/* =====================================================
+BUTTONS
+===================================================== */
+
+.stButton>button{
+    width:100%;
+    height:52px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.stButton>button:hover{
+    transform:scale(1.02);
+}
+
+/* =====================================================
+AI RESPONSE
+===================================================== */
+
+.response-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:18px;
+    border:1px solid #334155;
+    color:white;
+    line-height:1.9;
+    font-size:17px;
+    margin-top:10px;
+}
+
+/* =====================================================
+CHAT HISTORY
+===================================================== */
+
+.user-chat{
+    background:#2563eb;
+    padding:18px;
+    border-radius:16px;
+    color:white;
+    margin-bottom:10px;
+}
+
+.ai-chat{
+    background:#1e293b;
+    padding:18px;
+    border-radius:16px;
+    color:white;
+    margin-bottom:25px;
+    border:1px solid #334155;
+}
+
+/* =====================================================
+SIDEBAR
+===================================================== */
+
+section[data-testid="stSidebar"]{
+    background:#111827;
+}
+
+/* =====================================================
+METRICS
+===================================================== */
+
+[data-testid="metric-container"]{
+    background:#1e293b;
+    border:1px solid #334155;
+    padding:15px;
+    border-radius:15px;
+}
+
+/* =====================================================
+TABS
+===================================================== */
+
+.stTabs [data-baseweb="tab-list"]{
+    gap:20px;
+}
+
+.stTabs [data-baseweb="tab"]{
+    background:#1e293b;
+    border-radius:12px;
+    color:white;
+    padding:10px 20px;
+}
+
+/* =====================================================
+DOWNLOAD BUTTON
+===================================================== */
+
+.stDownloadButton>button{
+    width:100%;
+    background:#16a34a;
+    color:white;
+    border:none;
+    border-radius:12px;
+    height:50px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+/* =====================================================
+CODE BLOCK
+===================================================== */
+
+.stCodeBlock{
+    border-radius:15px;
+}
+
+/* =====================================================
+SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#334155;
+    border-radius:10px;
+}
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .main-title{
+        font-size:35px;
+    }
+
+    .sub-title{
+        font-size:15px;
+    }
+
+}
+
+.st-emotion-cache-1ix68xf{
+    color: #ffffff;
+}
+
+.st-emotion-cache-1bf0olv{
+    color: #ffffff;
+}
+
+.st-emotion-cache-15okssx{
+    color: #ffffff;
+}
+
+.st-co{
+    color: #0f172a;
+}
