@@ -141,9 +141,9 @@ elif template == "Explain Python":
 # TITLE
 # ======================================================
 
-st.markdown(
-    '<div class="main-title">🤖 AI Assistant Pro</div>',
-    unsafe_allow_html=True
+st.markdown("""
+    <div class="main-title">AI Assistant Pro</div>
+    """,unsafe_allow_html=True
 )
 
 st.markdown(
@@ -252,25 +252,42 @@ with tab1:
             # TYPING ANIMATION
             # ==========================================
 
-            st.markdown("## ✅ AI Response")
+            st.markdown(
+                """
+                <div class="response-heading">
+                    ✨ AI Response
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
             placeholder = st.empty()
 
-            full_response = ""
+            typed_text = ""
 
             for char in ai_response:
-                full_response += char
+
+                typed_text += char
 
                 placeholder.markdown(
                     f"""
                     <div class="response-box">
-                    {full_response}
+                        {typed_text}<span class="typing-cursor">|</span>
                     </div>
                     """,
                     unsafe_allow_html=True
                 )
 
-                time.sleep(0.002)
+                time.sleep(0.005)
+
+            placeholder.markdown(
+                f"""
+                <div class="response-box">
+                    {ai_response}
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
             # ==========================================
             # SAVE CHAT HISTORY
